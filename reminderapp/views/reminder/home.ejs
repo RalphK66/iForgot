@@ -1,0 +1,117 @@
+<script type="text/javascript">
+    getLocation()
+</script>
+<div class="forecast">
+    <h5>Forecast</h5>
+    <div class="weather">
+        <div class="weather-icon">
+            <div class="weekday">Today</div>
+            <img id="0" src="">
+        </div>
+        <div class="weather-icon">
+            <div class="weekday">Tomorrow</div>
+            <img id="1" src="">
+        </div>
+        <div class="weather-icon">
+            <div id="day2" class="weekday"></div>
+            <img id="2" src="">
+        </div>
+        <div class="weather-icon">
+            <div id="day3" class="weekday"></div>
+            <img id="3" src="">
+        </div>
+        <div class="weather-icon">
+            <div id="day4" class="weekday"></div>
+            <img id="4" src="">
+        </div>
+        <div class="weather-icon">
+            <div id="day5" class="weekday"></div>
+            <img id="5" src="">
+        </div>
+        <div class="weather-icon">
+            <div id="day6" class="weekday"></div>
+            <img id="6" src="">
+        </div>
+
+    </div>
+</div>
+<div class="today">
+    <div style="width: 70%; margin: 5px; ">
+        <!-- today reminders -->
+        <div class="today-reminders">
+            <h5>Today</h5>
+            <div class="today-reminders-info">
+                <!-- Next reminder for today -->
+                <div class="next-reminder">
+                    <h6>Next reminder</h6>
+                    <div>
+                        <div class="next-reminder-info">
+                            <p>Today, time</p>
+                            <p>Reminder Title</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- number of reminders for today -->
+                <div style="width: 30%; font-size: larger; color:black">
+                    <div class="fa-stack fa-2x">
+                        <i class="fa fa-circle fa-stack-2x fa-white" style="color: white;"></i>
+                        <span class="fa-stack-1x">
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- today umbrella -->
+    <div style=" width: 30%; margin: 5px;font-size: x-large;">
+        <div>
+            <div class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x " style="color: dodgerblue;"></i>
+                <i class="fa fa-umbrella fa-stack-1x" style="color: white;"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="future-reminders">
+    <!-- this week reminders -->
+    <div style="width: 50%; margin: 5px;">
+        <div class="week-reminders" style="font-size: larger; color:black; display: block;">
+            <h5 style="color: white;">This Week</h5>
+            <div class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x" style="color: white;"></i>
+                <span class="fa-stack-1x"><%= reminders.length %></span>
+            </div>
+        </div>
+    </div>
+    <!-- this month reminders -->
+    <div style="width: 50%; margin: 5px;">
+        <div class="week-reminders" style="font-size: larger; color:black; display: block;">
+            <h5 style="color: white;">This Month</h5>
+            <div class="fa-stack fa-2x">
+                <i class="fa fa-circle fa-stack-2x" style="color: white;"></i>
+                <span class="fa-stack-1x"><%= reminders.length %></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div style="display:flex; flex-direction:row; justify-content: space-around;">
+        <div style="display: flex; flex-direction:column;">
+            <h5>Create Reminder</h5>
+            <a href="/reminder/new" class="main-button">
+                <i class="fa fa-plus-circle fa-4x"></i>
+            </a>
+        </div>
+        <div style="display: flex; flex-direction:column;">
+            <h5>View All Reminders</h5>
+            <a href="/reminder" class="main-button">
+                <div class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-eye fa-stack-1x"></i>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

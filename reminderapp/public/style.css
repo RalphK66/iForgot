@@ -1,0 +1,233 @@
+.deleteForm {
+  display: inline-block
+}
+
+
+/*  header styling */
+.header {
+  text-align: center;
+  color: white;
+  background-color: dodgerblue;
+  padding: 25px;
+  margin: auto;
+}
+
+.footer {
+  text-align: center;;
+  color: white;
+  background-color: dodgerblue;
+  padding: 25px;
+  margin: auto;
+}
+.main-button{
+  color:white;
+  text-decoration: none;
+}
+.pull-right {
+  color: dodgerblue ;
+}
+
+/*  navigation icons in footers */
+.fa-eye, .fa-pen, .fa-home{
+color: dodgerblue;
+}
+
+#myUL {
+  border: 1px solid lightgray; 
+  border-radius: 16px; 
+  min-height: 42px; 
+  font-size: large; 
+  color:dimgray;
+  padding: 10px;
+  list-style-type: none;
+  transition: 0.2s
+}
+
+#myUL li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+#myUL li:hover {
+  background: #ddd;
+}
+#myUL li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* #myUL li.checked {
+  background-color: mediumaquamarine;
+  color: white;
+  text-decoration: line-through;
+}
+#myUL li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: white;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+} */
+
+
+/* close button limitation */
+.close {
+  position: absolute;
+  font-size: 25px;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+.close:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.full-list .close {
+display: none
+}
+
+.nav-item .close {
+
+  display: none;
+}
+
+.single-reminder .close {
+  display: none;
+}
+
+.task-item .close {
+  display: none;
+} 
+
+/* for the todays reminders block on main page */
+.today {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 5px auto;
+}
+
+.today-reminders {
+  margin: 5px;
+  padding: 5px;
+  background-color: dodgerblue;
+  border-radius: 15px;
+  color: white;
+}
+
+.today-reminders-info {
+  display: flex;
+  align-items: center;
+}
+
+.next-reminder {
+  width: 70%;
+}
+
+.next-reminder-info {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: lightskyblue;
+}
+
+/* for the weather block in the home page */
+.forecast {
+  text-align: center;
+  background-color: lightskyblue;
+  padding: 5px;
+  margin: auto;
+  margin-top: none;
+}
+
+.forecast h5 {
+  color: white;
+}
+.weather {
+  display: inline-flex;
+}
+
+.weather-icon {
+  font-size: 12px;
+  color: gray;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.weather-icon:hover {
+  cursor: pointer;
+}
+
+.weekday {
+  color: white;
+}
+
+/* for the future reminder block in the home page */
+.future-reminders {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 5px auto;
+}
+
+.week-reminders {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: lightskyblue;
+}
+
+.month-reminders {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: lightskyblue;
+}
+
+
+/*  login page */
+.signin {
+
+  background-color: dodgerblue;
+
+  color: white;
+}
+
+.sign {
+  font-size: larger;
+
+
+}
+
+.signbtn {
+  color: mediumaquamarine;
+  
+
+
+}
+
+.signin-a {
+  color: mediumaquamarine;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  margin: 5px
+}

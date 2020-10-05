@@ -1,0 +1,31 @@
+<h1 class="page-header">Reminders</h1>
+
+<% reminders.forEach(function (reminderItem) { %>
+<div class="box" style="margin: 25px 25px 25px 25px;">
+  <div class="row">
+    <span class="col-xs-6"><strong><%= reminderItem.title %> </strong></span>
+    <span class="col-xs-5"><%= reminderItem.datetime %></span>
+    <a style="text-align: right;" class="col-xs-1" href=<%= "/reminder/" + reminderItem.id %>>View</a>
+  </div>
+</div>
+<% }) %>
+
+
+<div class="footer">
+  <div style="display:flex; flex-direction:row; justify-content: space-around;">
+    <div style="display: flex; flex-direction:column;">
+      <h5>Create Reminder</h5>
+      <a href="/reminder/new" class="main-button">
+        <i class="fa fa-plus-circle fa-4x"></i>
+      </a>
+    </div>
+    <div style="display: flex; flex-direction:column;">
+      <h5>Home</h5>
+      <a href="/home" class="main-button">
+        <div class="fa-stack fa-2x">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fas fa-home fa-stack-1x"></i>
+        </div>
+      </a>
+    </div>
+  </div>

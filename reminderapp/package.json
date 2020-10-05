@@ -1,0 +1,36 @@
+{
+  "name": "reminderlist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "http",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bootstrap-datetimepicker-npm": "^4.17.37-npm",
+    "ejs": "^2.7.4",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-favicon": "^2.0.1",
+    "favicon": "0.0.2",
+    "firebase-admin": "^8.10.0",
+    "flatpickr": "^4.6.3",
+    "jquery": "^3.5.0",
+    "method-override": "^2.3.7",
+    "moment": "^2.24.0",
+    "mongo": "^0.1.0",
+    "mongodb": "^3.5.5",
+    "mongoose": "^4.7.7",
+    "nodemon": "^1.11.0",
+    "serve-favicon": "^2.5.0"
+  }
+}
